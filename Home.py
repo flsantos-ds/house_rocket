@@ -21,7 +21,7 @@ st.markdown(
     Portfolio Dashboard foi construído para acompanhar as principais métricas e caracteristicas de um portfólio de imóveis.
     - Localização;
         - Zip code;
-        - Dados geográficos (latitude e logitude).
+        - Dados geográficos (latitude e longitude).
     - Preço;
     - Ano de construção;
     - Ano de renovação;
