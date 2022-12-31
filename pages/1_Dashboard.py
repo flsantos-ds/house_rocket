@@ -87,7 +87,7 @@ def overview_data(data):
         else:
             data = data.copy()
         
-        st.header('Overview Data')
+        st.markdown('### Overview Data')
         st.dataframe(data)
 
     with tab2:
@@ -111,7 +111,7 @@ def overview_data(data):
         # Alterar o nome das colunas
         df.columns = ['ZIPCODE', 'TOTAL HOUSES', 'PRICE' , 'SQRT LIVING', 'PRICE / M2']
 
-        st.header('Average Values')
+        st.markdown('### Average Values')
         st.dataframe(df, height = 600)
 
 
@@ -131,7 +131,7 @@ def overview_data(data):
         df1 = pd.concat([media, mediana, desvio_padrao, maximo, minimo], axis=1).reset_index()
         df1.columns = ['attributes','mean', 'median', 'std', 'max', 'min']
 
-        st.header('Descriptive Analysis')
+        st.markdown('### Descriptive Analysis')
         st.dataframe(df1, height = 600)
 
 
